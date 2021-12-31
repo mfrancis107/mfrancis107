@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}reset.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <!-- site icon -->
+    <link rel="icon" href="{{ .Site.BaseURL }}AvatarMaker200.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>{{ block "title" . }}
+        {{ .Site.Title }}
+        {{ end }}</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="flex-row flex-grow header center">
+    <div class="container flex-row">
+        <div class="flex-row flex-grow">
+            <a href="/" style="text-decoration: none;">
+                <h1 class="h1">Michael Francis</h1>
+            </a>
+        </div>
+        <div class="flex-row flex-grow header-social justify-end align-center">
+            <div style="padding: 0 8px;">
+                <a href="/about-me">About</a>
+            </div>
+            <a href="https://www.linkedin.com/in/michael-francis-86b0177/" target="_blank" class="fa fa-linkedin" aria-label="Michael Francis Linkedin Profile"></a>
+            <a href="https://twitter.com/mfrancis107" target="_blank" class="fa fa-twitter" aria-label="Michael Francis Twitter Profile"></a>
+        </div>
+    </div>
+</div>
+<!-- Code that all your templates share, like a header -->
+{{ block "main" . }}
+<!-- The part of the page that begins to differ between templates -->
+{{ end }}
+{{ block "footer" . }}
+<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+{{ end }}
+</body>
+</html>

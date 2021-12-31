@@ -1,0 +1,6 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Michael Francis'
+
+[markup.goldmark.renderer]
+unsafe= true
