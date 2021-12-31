@@ -3,8 +3,6 @@ title: "About Michael Francis"
 date: 2021-12-29T19:52:20-05:00
 draft: true
 description: "About Michael Francis"
-outputs:
-  - html
 ---
 
 <img src="/profile_pic_small.jpg" width="100%"></img>
