@@ -1,0 +1,52 @@
+/* Flex row */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+
+.header{
+  background-color: #334d4d;
+  padding: 20px;
+  text-align: center;
+  color: #cbc774;
+}
+
+.h1{
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.container{
+  width:980px;
+  margin: 0 auto;
+}
+
+.center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.header-social *{
+  text-decoration: none;
+  padding: 0 8px;
+  line-height: 1.5rem;
+  font-size:1.5rem;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.page h1, h2, h3, h4, h5{
+  margin: 1.2em 0;
+}
